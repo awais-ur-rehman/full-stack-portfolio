@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require("tailwindcss/defaultTheme");
 const { fontFamily } = require("tailwindcss/defaultTheme");
 module.exports = {
   content: ["./src/**/*.{html,js}"],
@@ -14,8 +15,8 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        poppins: ["Roboto", ...fontFamily.sans],
-        sixtyFour: ["Sixtyfour", ...fontFamily.serif],
+        poppins: ["Roboto", ...defaultTheme.sans],
+        sixtyFour: ["Sixtyfour", ...defaultTheme.serif],
       },
     },
     colors: {
