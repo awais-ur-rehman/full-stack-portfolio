@@ -16,7 +16,7 @@
 </head>
 
 <body class="font-poppins">
-    <nav class="fixed h-20 w-screen px-10 flex">
+    <!-- <nav class="fixed h-20 w-screen px-10 flex">
         <div class="h-full w-1/6 flex items-center">
             <h1 class="text-2xl text-white">Awaisfolio</h1>
         </div>
@@ -31,33 +31,46 @@
                 <i class="fa-solid fa-bars"></i>
             </div>
         </div>
-    </nav>
+    </nav> -->
 
 
     <main class="min-h-screen bg-background landing">
-        <section class="px-10 h-screen w-screen flex bg-home-bg bg-cover">
-            <div class="h-full w-1/2 flex flex-col justify-center space-y-2">
-                <h3 class="text-white/50 text-4xl">Hello I'm</h3>
-                <h1 class="text-primary text-5xl">Awais Ur Rehman</h1>
-                <h2 class="text-white text-4xl">Full Stack Developer</h2>
-                <p class="text-white/50 text-xl">I value <span class="text-primary">Honesty</span> and
-                    <span class="text-primary">Dedication</span> the most
+        <section
+            class="h-screen w-screen px-10 flex flex-col lg:flex-row items-center justify-center bg-home-bg bg-cover">
+            <!-- Text Section -->
+            <div
+                class="h-full w-full lg:w-1/2 flex flex-col justify-end space-y-2 text-center lg:text-left px-0 lg:px-6 pt-20 lg:pt-0 lg:justify-center">
+                <h3 class="text-white/50 text-2xl lg:text-4xl">Hello I'm</h3>
+                <h1 class="text-primary text-2xl lg:text-5xl">Awais Ur Rehman</h1>
+                <h2 class="text-white text-2xl lg:text-4xl">
+                    Crafting Scalable Web and Mobile Solutions
+                </h2>
+
+                <p class="text-white/50 text-lg lg:text-xl">
+                    Turning ideas into <span class="text-primary">cutting-edge applications</span> while fostering <span
+                        class="text-primary">trust</span> and <span class="text-primary">collaboration</span>.
                 </p>
-                <div class="h-20 w-full mt-6 flex items-center space-x-4">
-                    <button class="h-10 w-20 bg-primary text-secondary rounded-lg hover:bg-white">Hire
-                        Me</button>
+
+                <div class="h-20 w-full flex justify-center lg:justify-start items-center space-x-4">
+                    <button
+                        class="h-10 px-6 bg-primary text-secondary rounded-lg hover:bg-white flex items-center space-x-2">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Contact Me</span>
+                    </button>
                     <button class="h-10 w-30 text-white rounded-lg  hover:text-primary">Download
                         CV
                     </button>
                 </div>
-            </div>
-            <div class="h-full w-1/2 flex justify-center items-center">
-                <div
-                    class="bg-landing-bg bg-cover bg-center h-1/2 w-full rounded-full flex justify-center items-center p-6">
-                    <img src="/src/assets/bg-avatar.png" alt="bg-avatar" class="h-full w-full object-cover">
-                </div>
+
             </div>
 
+            <!-- Image Section -->
+            <div class="h-full w-full lg:w-1/2 flex justify-start items-center p-6">
+                <div
+                    class="bg-landing-bg bg-contain bg-no-repeat bg-center h-1/2 lg:h-2/3 w-full rounded-full flex justify-center items-center p-6">
+                    <img src="/src/assets/bg-avatar.png" alt="bg-avatar" class="h-full w-full object-contain">
+                </div>
+            </div>
         </section>
 
         <section class="h-36 w-full bg-primary flex items-center justify-center">
@@ -70,28 +83,39 @@
             </marquee>
         </section>
 
-
-        <section class="h-screen w-screen bg-background flex px-4">
-            <div class="h-full w-1/2 flex justify-end items-center">
-                <div class="h-1/2 w-full flex justify-center items-center bg-about-bg bg-cover rounded-3xl">
+        <!-- About -->
+        <section class="h-screen w-screen bg-background flex flex-col lg:flex-row px-4 items-center justify-center">
+            <!-- Image Section -->
+            <div class="h-full w-full lg:w-1/2 flex justify-center lg:justify-end items-center p-6">
+                <div class="h-full lg:h-1/2 w-full flex justify-center items-center bg-about-bg bg-cover rounded-3xl">
                 </div>
             </div>
-            <div class="h-full w-1/2 flex justify-start items-center ps-10">
-                <div class="h-1/2 w-full">
-                    <h5 class="text-white/50 text-xl shimmer-effect">About Me</h5>
-                    <h1 class="text-6xl text-white">Who is <span class="text-primary">Awais Ur Rehman</span>?</h1>
-                    <p class="text-lg text-white/50">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic unde
-                        ipsam, distinctio amet
-                        obcaecati nulla dicta saepe fugiat pariatur at, alias, quas doloremque mollitia iusto delectus
-                        neque fuga totam consequatur.</p>
-                    <div class="h-32 w-full flex justify-between py-4">
-                        <div class="h-full w-1/2 text-white space-y-8">
-                            <h1 class="text-6xl text-primary">1st</h1>
+
+            <!-- Text Section -->
+            <div class="h-full w-full lg:w-1/2 flex justify-center lg:justify-start items-center p-x6">
+                <div class="h-1/2 w-full text-center lg:text-left space-y-8 px-2 lg:px-6">
+                    <div>
+                        <h5 class="text-white/50  text-md lg:text-xl shimmer-effect">About Me</h5>
+                        <h1 class="text-2xl lg:text-6xl text-white">Who is <span class="text-primary">Awais Ur
+                                Rehman</span>?
+                        </h1>
+                        <p class="text-sm lg:text-md text-white/50">
+                            I am a passionate and dedicated Full Stack Developer with expertise in creating scalable web
+                            and mobile applications.
+                            With a strong foundation in software engineering and a commitment to innovation, I strive to
+                            deliver cutting-edge solutions that
+                            simplify lives and inspire change.
+                        </p>
+
+                    </div>
+                    <div class="h-32 w-full flex flex-col lg:flex-row justify-between py-4 space-y-4 lg:space-y-0">
+                        <div class="h-full w-full lg:w-1/2 text-white space-y-2">
+                            <h1 class="text-4xl font-bold lg:text-6xl text-primary">1st</h1>
                             <h2 class="text-sm">Siberkoza Pak/Turkey Competition</h2>
                         </div>
 
-                        <div class="h-full w-1/2 text-white space-y-8">
-                            <h1 class="text-6xl text-primary">2nd</h1>
+                        <div class="h-full w-full lg:w-1/2 text-white space-y-2">
+                            <h1 class="text-4xl font-bold lg:text-6xl text-primary">2nd</h1>
                             <h2 class="text-sm">Securiti GenAI Competition</h2>
                         </div>
                     </div>
@@ -99,18 +123,20 @@
             </div>
         </section>
 
-        <section class="px-10 py-24 h-screen w-screen">
-            <div class="h-1/6 text-center">
+        <!-- Education & Work -->
+        <section class="px-10 h-screen w-screen">
+            <div class="h-2/6 text-center flex flex-col justify-end pb-8">
                 <h1 class="text-xl text-white/50 shimmer-effect">Education & Work</h1>
                 <h1 class="text-3xl text-primary">My Education & Work Experience</h1>
             </div>
-            <div class="h-5/6 w-full flex justify-around gap-8">
-                <div class="h-5/6 w-1/2 bg-primary rounded-3xl p-6">
+            <div class="h-4/6 w-full lg:flex justify-around gap-8 space-y-2 lg:space-y-0 px-0 xl:px-[20%] block">
+                <div class="h-1/2 lg:h-5/6 w-full lg:w-1/2 bg-primary rounded-3xl p-8">
                     <div class="h-1/4 w-full flex justify-start items-center text-center space-x-2">
-                        <div class="h-20 w-20 bg-background rounded-full flex justify-center text-center items-center">
-                            <i class="fa-solid fa-school text-primary text-4xl"></i>
+                        <div
+                            class="h-10 w-10 lg:h-20 lg:w-20 bg-background rounded-full flex justify-center text-center items-center">
+                            <i class="fa-solid fa-school text-primary text-xl lg:text-4xl"></i>
                         </div>
-                        <h1 class="text-background text-4xl">Education</h1>
+                        <h1 class="text-background text-xl lg:text-4xl font-bold">Education</h1>
                     </div>
                     <div class="h-3/4 w-full ">
                         <div class="h-20 w-full flex justify-between">
@@ -134,12 +160,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="h-5/6 w-1/2 bg-primary rounded-3xl py-6 px-10">
+                <div class="h-1/2 lg:h-5/6 w-full lg:w-1/2 bg-primary rounded-3xl p-8">
                     <div class="h-1/4 w-full flex justify-start items-center text-center space-x-2">
-                        <div class="h-20 w-20 bg-background rounded-full flex justify-center text-center items-center">
-                            <i class="fa-solid fa-briefcase text-primary text-4xl"></i>
+                        <div
+                            class="h-10 w-10 lg:h-20 lg:w-20 bg-background rounded-full flex justify-center text-center items-center">
+                            <i class="fa-solid fa-briefcase text-primary text-xl lg:text-4xl"></i>
                         </div>
-                        <h1 class="text-background text-4xl">Work</h1>
+                        <h1 class="text-background text-xl lg:text-4xl font-bold">Work</h1>
                     </div>
                     <div class="h-3/4 w-full ">
                         <div class="h-20 w-full flex justify-between">
@@ -170,68 +197,78 @@
 
 
         <!-- Skills -->
-        <section class="h-screen w-screen px-10 bg-secondary flex">
-            <div class="h-full w-1/2 flex flex-col justify-center space-y-2">
+        <section
+            class="h-screen w-screen px-10 py-4 bg-secondary flex flex-col lg:flex-row justify-center items-center gap-4">
+            <!-- Skills Text Section -->
+            <div
+                class="h-1/3 w-full lg:w-1/2 flex flex-col justify-center space-y-4 text-center lg:text-left px-0 lg:px-10">
                 <h1 class="text-white/50 text-xl shimmer-effect">My Skills</h1>
-                <h1 class="text-white text-4xl">These are <span class="text-primary">Tools</span> &
-                    <span class="text-primary">Technologies</span> I've worked
-                    with!
+                <h1 class="text-white text-xl font-bold lg:text-4xl">These are <span class="text-primary">Tools</span> &
+                    <span class="text-primary">Technologies</span> I've worked with!
                 </h1>
-                <p class="text-white/50">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius illo blanditiis,
-                    nisi voluptas ad,
-                    veniam maiores molestias nihil expedita veritatis nam mollitia impedit placeat eaque quasi
-                    asperiores quas iure ratione!</p>
+                <p class="text-white/50">
+                    I specialize in building robust and scalable applications using modern tools and technologies.
+                    My experience spans from crafting intuitive UI/UX designs to developing efficient backend solutions.
+                </p>
+
             </div>
-            <div class="h-full w-1/2 flex flex-col justify-center">
-                <div class="h-1/2 w-full bg-secondary grid grid-cols-3 items-center ps-4 gap-4">
 
-                    <div class="h-28 w-28 bg-background flex flex-col space-y-2 justify-center items-center rounded-xl">
-                        <i class="fa-brands fa-figma text-primary text-4xl"></i>
-                        <h1 class="text-white">Figma</h1>
-                    </div>
-                    <div class="h-28 w-28 bg-background flex flex-col space-y-2 justify-center items-center rounded-xl">
-                        <i class="fa-brands fa-java text-primary text-4xl"></i>
-                        <h1 class="text-white">Java</h1>
-                    </div>
-                    <div class="h-28 w-28 bg-background flex flex-col space-y-2 justify-center items-center rounded-xl">
-                        <i class="fa-brands fa-dart-lang text-primary text-4xl"></i>
-                        <h1 class="text-white">Dart</h1>
-                    </div>
-                    <div class="h-28 w-28 bg-background flex flex-col space-y-2 justify-center items-center rounded-xl">
-                        <i class="fa-brands fa-flutter text-primary text-4xl"></i>
-                        <h1 class="text-white">Flutter</h1>
-                    </div>
-                    <div class="h-28 w-28 bg-background flex flex-col space-y-2 justify-center items-center rounded-xl">
-                        <i class="fa-brands fa-react text-primary text-4xl"></i>
-                        <h1 class="text-white">React</h1>
-                    </div>
-                    <div class="h-28 w-28 bg-background flex flex-col space-y-2 justify-center items-center rounded-xl">
-                        <i class="fa-brands fa-js text-primary text-4xl"></i>
-                        <h1 class="text-white">JavaScript</h1>
-                    </div>
-                    <div class="h-28 w-28 bg-background flex flex-col space-y-2 justify-center items-center rounded-xl">
-                        <i class="fa-brands fa-python text-primary text-4xl"></i>
-                        <h1 class="text-white">Python</h1>
-                    </div>
-                    <div class="h-28 w-28 bg-background flex flex-col space-y-2 justify-center items-center rounded-xl">
-                        <i class="fa-solid fa-database text-primary text-4xl"></i>
-                        <h1 class="text-white">Sql</h1>
-                    </div>
-                    <div class="h-28 w-28 bg-background flex flex-col space-y-2 justify-center items-center rounded-xl">
-                        <i class="fa-solid fa-code text-primary text-4xl"></i>
-                        <h1 class="text-white">VS Code</h1>
-                    </div>
-                    <div class="h-28 w-28 bg-background flex flex-col space-y-2 justify-center items-center rounded-xl">
-                        <i class="fa-brands fa-android text-primary text-4xl"></i>
-                        <h1 class="text-white">Android Studio</h1>
-                    </div>
-
+            <!-- Skills Grid Section -->
+            <div class="h-2/3 w-full lg:w-1/2 grid grid-cols-3 gap-6 items-center justify-center px-0 lg:px-20">
+                <div
+                    class="skill-card h-28 w-28 bg-background flex flex-col space-y-2 justify-center items-center rounded-xl">
+                    <i class="fa-brands fa-figma text-primary text-4xl"></i>
+                    <h1 class="text-white">Figma</h1>
+                </div>
+                <div
+                    class="skill-card h-28 w-28 bg-background flex flex-col space-y-2 justify-center items-center rounded-xl">
+                    <i class="fa-brands fa-java text-primary text-4xl"></i>
+                    <h1 class="text-white">Java</h1>
+                </div>
+                <div
+                    class="skill-card h-28 w-28 bg-background flex flex-col space-y-2 justify-center items-center rounded-xl">
+                    <i class="fa-brands fa-dart-lang text-primary text-4xl"></i>
+                    <h1 class="text-white">Dart</h1>
+                </div>
+                <div
+                    class="skill-card h-28 w-28 bg-background flex flex-col space-y-2 justify-center items-center rounded-xl">
+                    <i class="fa-brands fa-flutter text-primary text-4xl"></i>
+                    <h1 class="text-white">Flutter</h1>
+                </div>
+                <div
+                    class="skill-card  h-28 w-28 bg-background flex flex-col space-y-2 justify-center items-center rounded-xl">
+                    <i class="fa-brands fa-react text-primary text-4xl"></i>
+                    <h1 class="text-white">React</h1>
+                </div>
+                <div
+                    class="skill-card h-28 w-28 bg-background flex flex-col space-y-2 justify-center items-center rounded-xl">
+                    <i class="fa-brands fa-js text-primary text-4xl"></i>
+                    <h1 class="text-white">JavaScript</h1>
+                </div>
+                <div
+                    class="skill-card h-28 w-28 bg-background flex flex-col space-y-2 justify-center items-center rounded-xl">
+                    <i class="fa-brands fa-python text-primary text-4xl"></i>
+                    <h1 class="text-white">Python</h1>
+                </div>
+                <div
+                    class="skill-card h-28 w-28 bg-background flex flex-col space-y-2 justify-center items-center rounded-xl">
+                    <i class="fa-solid fa-database text-primary text-4xl"></i>
+                    <h1 class="text-white">SQL</h1>
+                </div>
+                <div
+                    class="skill-card h-28 w-28 bg-background flex flex-col space-y-2 justify-center items-center rounded-xl">
+                    <i class="fa-solid fa-code text-primary text-4xl"></i>
+                    <h1 class="text-white">VS Code</h1>
+                </div>
+                <div
+                    class="skill-card h-28 w-28 bg-background flex flex-col space-y-2 justify-center items-center rounded-xl">
+                    <i class="fa-brands fa-android text-primary text-4xl"></i>
+                    <h1 class="text-white">Android Studio</h1>
                 </div>
             </div>
         </section>
 
-        <section class="h-96 w-screen bg-project-bg bg-secondary bg-cover bg-center">
-
+        <section class="h-36 lg:h-96 w-screen bg-project-bg bg-secondary bg-cover bg-center">
         </section>
 
         <!-- projects -->
@@ -241,11 +278,11 @@
                 <h1 class="text-4xl text-background font-extrabold">Explore My Popular <span
                         class="text-white">Projects</span></h1>
             </div>
-            <div class="h-[600px] w-full flex pt-20">
-                <div class="h-full w-1/2 bg-primary rounded-xl">
+            <div class="h-auto lg:h-[600px] w-full block lg:flex pt-20 space-y-4 lg:space-y-0 px-0 xl:px-28">
+                <div class="h-1/2 w-full lg:h-full lg:w-1/2 bg-primary rounded-xl">
                     <img src="assets/projects/student360.jpeg" alt="student360" class="h-full w-full object-contain ">
                 </div>
-                <div class="h-full w-1/2 px-4 space-y-8">
+                <div class="h-1/2 w-full lg:h-full lg:w-1/2 px-4 space-y-8">
                     <div class="space-y-2">
                         <h1 class="text-background/50">Web Development</h1>
                         <h1 class="text-6xl text-white font-bold">Student 360</h1>
@@ -274,8 +311,8 @@
                 </div>
             </div>
 
-            <div class="h-[600px] w-full flex pt-20">
-                <div class="h-full w-1/2 px-4 space-y-8">
+            <div class="h-auto lg:h-[600px] w-full block lg:flex pt-20 space-y-2 lg:space-y-0 px-0 xl:px-28">
+                <div class="h-1/2 w-full lg:h-full lg:w-1/2 px-4 space-y-8">
                     <div class="space-y-2">
                         <h1 class="text-background/50">App Development</h1>
                         <h1 class="text-6xl text-white font-bold">OculaCare</h1>
@@ -302,16 +339,16 @@
                     </div>
                 </div>
 
-                <div class="h-full w-1/2 bg-primary">
+                <div class="h-1/2 w-full lg:h-full lg:w-1/2 bg-primary">
                     <img src="assets/projects/oculacare.png" alt="oculacare" class="h-full w-full object-contain">
                 </div>
             </div>
 
-            <div class="h-[600px] w-full flex pt-20">
-                <div class="h-full w-1/2 bg-secondary">
-
+            <div class="h-auto lg:h-[600px] w-full block lg:flex pt-20 space-y-4 lg:space-y-0 px-0 xl:px-28">
+                <div class="h-1/2 w-full lg:h-full lg:w-1/2 bg-primary rounded-xl">
+                    <img src="assets/projects/student360.jpeg" alt="student360" class="h-full w-full object-contain ">
                 </div>
-                <div class="h-full w-1/2 px-4 space-y-8">
+                <div class="h-1/2 w-full lg:h-full lg:w-1/2 px-4 space-y-8">
                     <div class="space-y-2">
                         <h1 class="text-background/50">App Development</h1>
                         <h1 class="text-6xl text-white font-bold">Faast</h1>
@@ -333,14 +370,15 @@
                         </div>
                         <div class="flex space-x-2 justify-center items-center">
                             <h1 class="text-primary shimmer-effect">Github Link</h1>
-                            <i class="shimmer-effect fa-solid fa-arrow-right float-right text-xl text-primary"></i>
+                            <i class="fa-solid fa-arrow-right float-right text-xl text-primary shimmer-effect"></i>
+
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="h-[600px] w-full flex pt-20">
-                <div class="h-full w-1/2 px-4 space-y-8">
+            <div class="h-auto lg:h-[600px] w-full block lg:flex pt-20 space-y-2 lg:space-y-0 px-0 xl:px-28">
+                <div class="h-1/2 w-full lg:h-full lg:w-1/2 px-4 space-y-8">
                     <div class="space-y-2">
                         <h1 class="text-background/50">App Development</h1>
                         <h1 class="text-6xl text-white font-bold">Otaku</h1>
@@ -367,26 +405,27 @@
                     </div>
                 </div>
 
-                <div class="h-full w-1/2 bg-primary">
+                <div class="h-1/2 w-full lg:h-full lg:w-1/2 bg-primary">
                     <img src="assets/projects/otaku.png" alt="oculacare" class="h-full w-full object-contain">
                 </div>
             </div>
 
         </section>
 
+        <section class="h-36 lg:h-[600px] w-screen bg-proEnd-bg bg-background bg-cover">
+        </section>
+
+
 
         <section class="h-96 w-screen bg-securiti-bg bg-cover bg-fixed bg-center backdrop-blur-sm">
             <div class="bg-secondary/70 h-full w-full flex text-center items-center justify-center">
-                <h1 class="text-white text-8xl font-bold underline decoration-primary"><span
-                        class="text-primary">MY</span> F<span class="text-primary">.</span>R<span
-                        class="text-primary">.</span>I<span class="text-primary">.</span>E<span
-                        class="text-primary">.</span>N<span class="text-primary">.</span>D<span
-                        class="text-primary">.</span>S</h1>
+                <h1 class="text-white text-4xl lg:text-8xl font-bold underline decoration-primary"><span
+                        class="text-primary">Hire</span> ME<span class="text-primary"></h1>
             </div>
         </section>
 
-        <section class="h-screen w-screen bg-background flex px-4">
-            <div class="h-full w-[40%] flex flex-col justify-center space-y-4">
+        <section class="h-screen w-screen bg-background block lg:flex px-4">
+            <div class="h-1/2 lg:h-full w-full lg:w-[40%] flex flex-col justify-center space-y-8 px-0 lg:px-20">
                 <div>
                     <h1 class="text-xl text-white/50 shimmer-effect">Get in Touch</h1>
                     <h1 class="text-4xl text-white font-extrabold">Let's Talk For your <span class="text-primary">Next
@@ -441,9 +480,9 @@
                 </ul>
             </div>
 
-            <div class="h-full w-[60%] flex justify-center items-center">
-                <form class="h-96 w-full" onsubmit="sendEmail(event)">
-                    <div class="flex flex-col space-y-4 w-full">
+            <div class="h-1/2 w-full lg:h-full lg:w-[60%] flex justify-center items-center">
+                <form class="h-full w-full" onsubmit="sendEmail(event)">
+                    <div class="h-full lg:justify-center lg:items-center flex flex-col space-y-4 w-full px-0 lg:px-20">
                         <!-- FullName and Email -->
                         <div class="flex space-x-4 items-center w-full">
                             <div class="block space-y-2 w-1/2">
@@ -485,7 +524,7 @@
                         </div>
 
                         <button type="submit"
-                            class="h-16 w-44 bg-primary rounded-2xl text-background text-lg hover:text-white hover:bg-background hover:border hover:border-primary">
+                            class="h-8 w-32 lg:h-16 lg:w-44 bg-primary rounded-xl lg:rounded-2xl text-background text-md lg:text-lg hover:text-white hover:bg-background hover:border hover:border-primary">
                             Send Message
                         </button>
                     </div>
@@ -580,13 +619,14 @@
             </div>
 
             <div class="h-1/6 w-full flex bg-background">
-                <div class="h-full w-1/2 flex justify-center text-center items-center">
-                    <h1 class="text-white/50 text-md">Copyright 2023
+                <div class="h-full w-full pt-6 lg:pt-0 lg:w-1/2 flex justify-center text-center items-center">
+                    <h1 class="text-white/50 text-sm lg:text-md">Copyright 2023
                         <span class="text-primary/80">Awaisfolio</span> All Rights Reserved
                     </h1>
                 </div>
 
-                <div class="h-full w-1/2 flex justify-center text-center items-center space-x-4 text-white/50">
+                <div
+                    class="h-full w-1/2 lg:flex justify-center text-center items-center space-x-4 text-white/50 text-sm hidden">
                     <a href="#">LinkedIn</a>
                     <a href="#">GitHub</a>
                     <a href="#">Twitter</a>
@@ -604,6 +644,8 @@
             </div>
         </footer>
     </main>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -30,6 +30,7 @@ module.exports = {
       "project-bg": "url('/src/assets/projects-bg.png')",
       "securiti-bg": "url('/src/assets/bg-securiti.jpeg')",
       "about-bg": "url('/src/assets/about.jpeg')",
+      "proEnd-bg": "url('/src/assets/project_end.png')",
     },
   },
   plugins: [],
